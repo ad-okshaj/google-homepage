@@ -1,8 +1,9 @@
 <style>
+
    #logo{
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
     padding-top: 230px;
     height: 140px;
     padding-bottom: 50px;
@@ -10,23 +11,25 @@
    #mainbox {
        display: block;
        margin-left: auto;
-       margin-right: auto;
+       margin-right: auto;   
        padding: 20px;
        min-width: 750px;
        max-width: 1000px;
-       border-radius: 50px;
-       font-size: 27px;
+       border-radius: 40px;
+       font-size: 26px;
    }
-  
-   
-     
-        button{
+  #mainbox:focus{
+       outline: none;
+       box-shadow: -3px 10px 10px gray;
+
+    }
+    button{
             display: block;
             margin-left: auto;
             margin-right: auto;
             margin-top: 40px;
             font-size: 22px;
-            font-family: monospace;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
             button:hover{
              color:white;
@@ -38,22 +41,22 @@
                 position: fixed;
                 bottom: 0px;
                 margin-left: -10px;
-                background-color: grey;
-                padding-top: 10px;
-                padding-bottom: 10px;
+                background-color:silver;
+                padding-top: 18px;
+                padding-bottom: 7px;
                 }
           
 
     .botonetext{
-        font-size: 25px;
-        padding-left: 20px;
-        padding-right: 20px;
+        font-size: 23px;
+        padding-left: 25px;
         text-decoration: none;
         font-family:Arial, Helvetica, sans-serif;
         color:blue;
         }
         .rightonly{
            float: right;
+           padding-right: 25px;
         }      
        /* footer{
            position: relative;
@@ -68,15 +71,20 @@
            background-color:#f2f2f2;
         }  */
     .AB{
-        text-align:center;
+        text-align: center;
         font-family: monospace;
-        color: white
+        color: black;
+        font-size: 19px;
+        padding-bottom: 7px;
     }
+
         
 </style>
 
+<!DOCTYPE html>
 <html>
     <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <title>
             Google - Adokshaj Bhandarkar
         </title>
@@ -89,9 +97,12 @@
 
     <div class="botone"><a href="#" class="botonetext">Advertising</a>
     <a href="#" class="botonetext">Business</a>
-    <a href="#" class="botonetext rightonly">About</a>
-    <a href="#" class="botonetext rightonly">How Search Works</a>
-    <div class="AB">//Made with ❤️ by Adokshaj Bhandarkar</div>
+    <a href="#" class="botonetext">How Search Works</a>
+    <a href="#" class="botonetext">About</a>
+    <a href="#" class="botonetext rightonly">Settings</a>
+    <a href="#" class="botonetext rightonly">Terms</a>
+    <a href="#" class="botonetext rightonly">Privacy</a>
+    <div class="AB">// Made with ❤️ by Adokshaj Bhandarkar</div>
     </div>
     
 </html>
