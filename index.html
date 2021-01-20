@@ -1,72 +1,117 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <!--content="width=device-width, initial-scale=1" name="viewport" -->
-        <title>
-            Google - Adokshaj Bhandarkar
-        </title>
-        <style>
 
-            #logo{
-             display: block;
-             margin-left: auto;
-             margin-right: auto; 
-             padding-top: 230px;
-             height: 140px;
-             padding-bottom: 50px;
+<head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1" name="viewport">
+    <title>
+        Google - Adokshaj Bhandarkar
+    </title>
+    <style>
+        #logo {
+            text-align: center;
+            margin-top: 200px;
+            padding: 50px;
             }
-            #mainbox {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;   
-                padding: 20px;
-                min-width: 750px;
-                max-width: 1000px;
-                border-radius: 40px;
-                font-size: 26px;
+
+        #searchbox {
+            padding: 15px 20px 15px 20px;
+            border-radius: 40px;
+            font-size: 26px;
+            width: 40%;
             }
-           #mainbox:focus{
-                outline: none;
-                box-shadow: -3px 10px 10px gray;
-         
-             }
-             button{
-                     display: block;
-                     margin-left: auto;
-                     margin-right: auto;
-                     margin-top: 40px;
-                     font-size: 22px;
-                     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                     }
-                     button:hover{
-                      color:white;
-                      background-color:lightslategrey
-                     }
-                     .botone{
-                         display: block;
-                         width: 100%;
-                         position: fixed;
-                         bottom: 0px;
-                         margin-left: -10px;
-                         background-color:silver;
-                         padding-top: 18px;
-                         padding-bottom: 7px;
-                         }
-                   
-         
-             .botonetext{
-                 font-size: 23px;
-                 padding-left: 25px;
-                 text-decoration: none;
-                 font-family:Arial, Helvetica, sans-serif;
-                 color:blue;
-                 }
-                 .rightonly{
-                    float: right;
-                    padding-right: 25px;
-                   }      
-                /* footer{
+
+        #searchbox:focus {
+            outline: none;
+            box-shadow: -3px 10px 10px gray;
+        }
+        
+        #searchbutton{
+            text-align: center;
+        }
+
+        .searchbutton {
+            margin-top: 40px;
+            font-size: 22px;
+            padding: 10px;
+        }
+
+        button:hover {
+            color: white;
+            background-color: lightslategrey
+        }
+
+        .botone {
+            display: block;
+            width: 100%;
+            position: fixed;
+            bottom: 0px;
+            margin-left: -10px;
+            background-color: silver;
+            padding-top: 18px;
+            padding-bottom: 7px;
+        }
+
+
+        .botonetext {
+            font-size: 23px;
+            padding-left: 25px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+        }
+
+        .rightonly {
+            float: right;
+            padding-right: 25px;
+        }
+
+        .AB {
+            text-align: center;
+            font-family: monospace;
+            color: black;
+            font-size: 19px;
+            padding-bottom: 7px;
+        }
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            padding: 5px 15px 0px 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .aboutstore{
+            margin-top: 20px;
+            font-size: 25px;
+            font-family: monospace;
+        }
+
+        .gmail{
+            float: right;
+            font-size: 25px;
+            margin-top: 20px;
+            font-family: monospace;
+            padding-right: 25px;
+            }
+
+        .signin {
+            float: right;
+            font-size: 20px;
+            font-family: monospace;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            margin: 15px 15px 0px 0px;
+        }
+
+        /* footer{
                     position: relative;
                     bottom: 0px; 
                     display: block;
@@ -78,35 +123,56 @@
                     height: 5%;
                     background-color:#f2f2f2;
                  }  */
-             .AB{
-                 text-align: center;
-                 font-family: monospace;
-                 color: black;
-                 font-size: 19px;
-                 padding-bottom: 7px;
-             }
-           @media (max-width: 805px) {
+        /*  @media (max-width: 805px) {
            .rightonly {
             float: none;
             display: block;
             text-align: center;
          } 
-           }
-         </style>
-    </head>
-    <body>
-    <img src="googlelogo_color_272x92dp.png" alt="Google Logo" id="logo">
-    <label for="mainbox"><input id="mainbox" name="mainbox"></input></label>
-    <button class="button">Google Search</button>
+           } */
+        /* img{
+             display: block;
+             margin-left: auto;
+             margin-right: auto; 
+             padding-top: 100px;
+             height: 140px;
+             padding-bottom: 50px;
+            } */
+    </style>
+</head>
+
+<body>
+    <button class="signin">Sign In</button>
+
+    <ul>
+        <li class="aboutstore"><a href="#" target="_blank">About<a></li>
+        <li class="aboutstore"><a href="#" target="_blank">Store</li>
+        <li class="gmail"><a href="#" target="_blank">Images</a></li>
+        <li class="gmail"><a href="#" target="_blank">Gmail</a></li>
+    </ul>
+
+    <div id="logo">
+        <img src="googlelogo_color_272x92dp.png" alt="Google Logo" style="height: 125px">
+    </div>
+
+    <div style="text-align: center; ">
+        <label for="mainbox"><input id="searchbox" name="mainbox"></input></label>
+    </div>
+
+    <div id="searchbutton">
+        <button class="searchbutton">Google Search</button>
+    </div>
+
     <div class="botone">
         <a href="#" class="botonetext" target="_blank">Advertising</a>
         <a href="#" class="botonetext" target="_blank">Business</a>
         <a href="#" class="botonetext" target="_blank">How Search Works</a>
-        <a href="#" class="botonetext" target="_blank">About</a>
         <a href="#" class="botonetext rightonly" target="_blank">Settings</a>
         <a href="#" class="botonetext rightonly" target="_blank">Terms</a>
         <a href="#" class="botonetext rightonly" target="_blank">Privacy</a>
         <div class="AB">// Made with ❤️ by Adokshaj Bhandarkar</div>
-        </div>
-    </body>
+    </div>
+
+</body>
+
 </html>
