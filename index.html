@@ -4,141 +4,9 @@
 <head>
     <meta charset="utf-8" content="width=device-width, initial-scale=1" name="viewport">
     <title>
-        Google - Adokshaj Bhandarkar
+        Google Homepage - Adokshaj Bhandarkar
     </title>
-    <style>
-        #logo {
-            text-align: center;
-            margin-top: 200px;
-            padding: 50px;
-            }
-
-        #searchbox {
-            padding: 15px 20px 15px 20px;
-            border-radius: 40px;
-            font-size: 26px;
-            width: 40%;
-            }
-
-        #searchbox:focus {
-            outline: none;
-            box-shadow: -3px 10px 10px gray;
-        }
-        
-        #searchbutton{
-            text-align: center;
-        }
-
-        .searchbutton {
-            margin-top: 40px;
-            font-size: 22px;
-            padding: 10px;
-        }
-
-        button:hover {
-            color: white;
-            background-color: lightslategrey
-        }
-
-        .botone {
-            display: block;
-            width: 100%;
-            position: fixed;
-            bottom: 0px;
-            margin-left: -10px;
-            background-color: silver;
-            padding-top: 18px;
-            padding-bottom: 7px;
-        }
-
-
-        .botonetext {
-            font-size: 23px;
-            padding-left: 25px;
-            text-decoration: none;
-            font-family: Arial, Helvetica, sans-serif;
-            color: blue;
-        }
-
-        .rightonly {
-            float: right;
-            padding-right: 25px;
-        }
-
-        .AB {
-            text-align: center;
-            font-family: monospace;
-            color: black;
-            font-size: 19px;
-            padding-bottom: 7px;
-        }
-
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            display: inline-block;
-            padding: 5px 15px 0px 20px;
-        }
-        a{
-            text-decoration: none;
-        }
-        .aboutstore{
-            margin-top: 20px;
-            font-size: 25px;
-            font-family: monospace;
-        }
-
-        .gmail{
-            float: right;
-            font-size: 25px;
-            margin-top: 20px;
-            font-family: monospace;
-            padding-right: 25px;
-            }
-
-        .signin {
-            float: right;
-            font-size: 20px;
-            font-family: monospace;
-            padding: 10px;
-            background-color: blue;
-            color: white;
-            margin: 15px 15px 0px 0px;
-        }
-
-        /* footer{
-                    position: relative;
-                    bottom: 0px; 
-                    display: block;
-                    margin-left: 20px; 
-                    font-family: monospace;
-                    font-size: 21px;
-                    font-weight: bold;
-                    width: 99%;
-                    height: 5%;
-                    background-color:#f2f2f2;
-                 }  */
-        /*  @media (max-width: 805px) {
-           .rightonly {
-            float: none;
-            display: block;
-            text-align: center;
-         } 
-           } */
-        /* img{
-             display: block;
-             margin-left: auto;
-             margin-right: auto; 
-             padding-top: 100px;
-             height: 140px;
-             padding-bottom: 50px;
-            } */
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -161,16 +29,17 @@
 
     <div id="searchbutton">
         <button class="searchbutton">Google Search</button>
+        <button class="searchbutton">I'm Feeling Lucky</button>
     </div>
 
     <div class="botone">
-        <a href="#" class="botonetext" target="_blank">Advertising</a>
-        <a href="#" class="botonetext" target="_blank">Business</a>
-        <a href="#" class="botonetext" target="_blank">How Search Works</a>
-        <a href="#" class="botonetext rightonly" target="_blank">Settings</a>
+        <a href="#" class="botonetext leftonly" target="_blank">Advertising</a>
+        <a href="#" class="botonetext leftonly" target="_blank">Business</a>
+        <!--<a href="#" class="botonetext" target="_blank">How Search Works</a>-->
+        <a href="#" class="botonetext rightonly" target="_blank">Settings</a> 
         <a href="#" class="botonetext rightonly" target="_blank">Terms</a>
         <a href="#" class="botonetext rightonly" target="_blank">Privacy</a>
-        <div class="AB">// Made with ❤️ by Adokshaj Bhandarkar</div>
+        <a class="AB">&nbsp;&nbsp;// Made with ❤️ by Adokshaj Bhandarkar (Psst, click on me!)</a>
     </div>
 
 </body>
